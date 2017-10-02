@@ -1,3 +1,36 @@
 page-home {
+ 
+    shrinking-segment-header {
+ 
+        background-color: #488aff;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+ 
+        img {
+            border-radius: 50%;
+            width: 75px;
+            height: auto;
+            margin-right: 15px;
+        }
+ 
+    }
 
+    .span-balance{
+        font-size: 12px;
+        font-weight: lighter;
+    }
+
+    
+    .icon-M{
+        font-size: 20px;
+    }
+    .icon-S{
+        font-size: 18px;
+    }
+    .content-center{
+        text-align: center;
+    }
+ 
 }

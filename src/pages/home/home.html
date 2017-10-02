@@ -1,17 +1,87 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+ 
+    <shrinking-segment-header [scrollArea]="myContent" headerHeight="125">
+        <img src="http://chronicle.com/blogs/profhacker/files/2013/04/Professortocat_v2-300x300.png" (click)="userProfile()"/>
+        <h5>Zhen W<br><span class="span-balance">Balance: $999.00</span></h5>
+        
+    </shrinking-segment-header>
+ 
+    <ion-toolbar color="light" mode="md">
+      <div>
+        <ion-grid>
+          <ion-row>
+
+            <ion-col class="content-center">
+              <ion-buttons>
+              <button clear ion-button>
+                <div>
+                  <ion-icon name='refresh'></ion-icon>
+                  <br>
+                  <label>Refresh</label>
+                </div>
+              </button>
+            </ion-buttons>
+            </ion-col>
+
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-toolbar>
+ 
+</ion-header>
+ 
+<ion-content fullscreen #myContent>
+
+    <div>
+        <ion-grid>
+          <ion-row>
+
+
+          </ion-row>
+        </ion-grid>
+      </div>  
+ 
+    <div [ngSwitch]="section">
+      
+      <ion-list>
+        <ion-item *ngFor="let something of somethings">
+          <ion-avatar item-start>
+            <img src="https://gordon-beeming.gallerycdn.vsassets.io/extensions/gordon-beeming/github/0.10.0/1474455219937/img/logo.png">
+          </ion-avatar>
+          <h2>Tesco</h2>
+          <p>11/10/2016</p>
+          <p item-end>$102.99</p>
+        </ion-item>
+      </ion-list>
+
+      <!-- <ion-list *ngSwitchCase="'one'">
+        <ion-item *ngFor="let something of somethings">
+          <ion-thumbnail item-left>
+            <img src="https://avatars.io/instagram/unknown">
+          </ion-thumbnail>
+          <h2>Something</h2>
+        </ion-item>
+      </ion-list>
+ 
+      <ion-list *ngSwitchCase="'two'">
+        <ion-item *ngFor="let something of somethings">
+          <ion-thumbnail item-left>
+            <img src="https://avatars.io/instagram/unknown">
+          </ion-thumbnail>
+          <h2>Something</h2>
+        </ion-item>
+      </ion-list>
+ 
+      <ion-list *ngSwitchCase="'three'">
+        <ion-item *ngFor="let something of somethings">
+          <ion-thumbnail item-left>
+            <img src="https://avatars.io/instagram/unknown">
+          </ion-thumbnail>
+          <h2>Something</h2>
+        </ion-item>
+      </ion-list> -->
+ 
+    </div>
+ 
 </ion-content>

@@ -6,9 +6,14 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+	//section: string = 'two';
+	somethings: any = new Array(20);
 
   constructor(public navCtrl: NavController) {
 
+  }
+  userProfile(){
+  	alert("hello");
   }
 
 }
