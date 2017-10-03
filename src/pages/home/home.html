@@ -16,13 +16,37 @@
               <ion-buttons>
               <button clear ion-button>
                 <div>
-                  <ion-icon name='refresh'></ion-icon>
+                  <ion-icon name="md-expand" class="icon-M" color="dark"></ion-icon>
                   <br>
-                  <label>Refresh</label>
+                  <label class="label-M">Scan & Pay</label>
                 </div>
-              </button>
+              </button> 
             </ion-buttons>
             </ion-col>
+
+            <ion-col class="content-center">
+              <ion-buttons>
+              <button clear ion-button>
+                <div>
+                  <ion-icon name='md-exit' class="icon-M" color="dark"></ion-icon>
+                  <br>
+                  <label class="label-M">Transfer</label>
+                </div>
+              </button> 
+            </ion-buttons>
+            </ion-col>
+
+            <ion-col class="content-center">
+              <ion-buttons>
+              <button clear ion-button>
+                <div>
+                  <ion-icon name='ios-card' class="icon-M" color="dark"></ion-icon>
+                  <br>
+                  <label class="label-M">Cards</label>
+                </div>
+              </button> 
+            </ion-buttons>
+            </ion-col> 
 
           </ion-row>
         </ion-grid>
@@ -37,10 +61,57 @@
         <ion-grid>
           <ion-row>
 
+            <ion-col class="content-center">
+              <ion-buttons>
+              <button clear ion-button>
+                <div>
+                  <ion-icon name='md-checkbox-outline' class="icon-M"></ion-icon>
+                  <br>
+                  <label class="label-M">Request</label>
+                </div>
+              </button> 
+            </ion-buttons>
+            </ion-col> 
+
+            <ion-col class="content-center">
+              <ion-buttons>
+              <button clear ion-button>
+                <div>
+                  <ion-icon name='ios-list-box-outline' class="icon-M"></ion-icon>
+                  <br>
+                  <label class="label-M">Pay Bill</label>
+                </div>
+              </button> 
+            </ion-buttons>
+            </ion-col>  
+
+            <ion-col class="content-center">
+              <ion-buttons>
+              <button clear ion-button>
+                <div>
+                  <ion-icon name='md-phone-portrait' class="icon-M"></ion-icon>
+                  <br>
+                  <label class="label-M">Top-Up</label>
+                </div>
+              </button> 
+            </ion-buttons>
+            </ion-col>  
+
+            <ion-col class="content-center">
+              <ion-buttons>
+              <button clear ion-button>
+                <div>
+                  <ion-icon name='md-heart-outline' class="icon-M"></ion-icon>
+                  <br>
+                  <label class="label-M">Donation</label>
+                </div>
+              </button> 
+            </ion-buttons>
+            </ion-col>  
 
           </ion-row>
         </ion-grid>
-      </div>  
+      </div>
  
     <div [ngSwitch]="section">
       
