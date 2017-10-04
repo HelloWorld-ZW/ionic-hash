@@ -1,6 +1,6 @@
 {
   "name": "hashPay",
-  "app_id": "",
+  "app_id": "a82fc8bf",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
